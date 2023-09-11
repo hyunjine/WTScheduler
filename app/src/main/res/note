@@ -1,0 +1,3 @@
+# drawable
+## bg_[solid]_[stroke]_[corner] @add: 없으면 pass
+ex) bg_white_16

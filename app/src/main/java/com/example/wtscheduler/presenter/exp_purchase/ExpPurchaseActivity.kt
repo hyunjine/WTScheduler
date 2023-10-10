@@ -1,6 +1,8 @@
 package com.example.wtscheduler.presenter.exp_purchase
 
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.example.wtscheduler.common.base.BaseActivity
 import com.example.wtscheduler.databinding.ActivityExpPurchaseBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -18,6 +20,6 @@ class ExpPurchaseActivity: BaseActivity<ActivityExpPurchaseBinding>({ ActivityEx
 
     private fun setAdapter() = binding.rvPurchaseList.apply {
         adapter = rvPurchaseAdapter
-        layoutManager =
+        layoutManager = LinearLayoutManager(this@ExpPurchaseActivity, LinearLayoutManager.VERTICAL, false)
     }
 }

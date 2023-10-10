@@ -1,15 +1,13 @@
-package com.example.wtscheduler.presenter
+package com.example.wtscheduler.presenter.exercise
 
 import android.os.Bundle
 import com.example.wtscheduler.common.base.BaseActivity
-import com.example.wtscheduler.databinding.ActivityMainBinding
+import com.example.wtscheduler.databinding.ActivityExerciseBinding
 import dagger.hilt.android.AndroidEntryPoint
-import java.time.LocalDate
 
 @AndroidEntryPoint
-class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inflate(it) }) {
+class ExerciseActivity : BaseActivity<ActivityExerciseBinding>({ ActivityExerciseBinding.inflate(it) }) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 }

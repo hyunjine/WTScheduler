@@ -8,20 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wtscheduler.common.extension.setOnSingleClickListener
 import com.example.wtscheduler.databinding.ItemExpPurchaseBinding
 
-class ExpPurchaseAdapter: ListAdapter<ExpPurchase, ExpPurchaseAdapter.ExpPurchaseViewHolder>(diffUtil) {
+class ExpPurchaseAdapter: ListAdapter<ExpPurchase, ExpPurchaseAdapter.ExpPurchaseViewHolder>(ExpPurchaseDiff) {
     var itemClickListener: ((ExpPurchase) -> Unit)? = null
-
-    companion object {
-        val diffUtil: DiffUtil.ItemCallback<ExpPurchase> = object : DiffUtil.ItemCallback<ExpPurchase>() {
-            override fun areItemsTheSame(oldItem: ExpPurchase, newItem: ExpPurchase): Boolean {
-                return oldItem.seq == newItem.seq
-            }
-
-            override fun areContentsTheSame(oldItem: ExpPurchase, newItem: ExpPurchase): Boolean {
-                return oldItem == newItem
-            }
-        }
-    }
 
     inner class ExpPurchaseViewHolder(private val binding: ItemExpPurchaseBinding): RecyclerView.ViewHolder(binding.root) {
         init {
@@ -41,5 +29,15 @@ class ExpPurchaseAdapter: ListAdapter<ExpPurchase, ExpPurchaseAdapter.ExpPurchas
 
     override fun onBindViewHolder(holder: ExpPurchaseViewHolder, position: Int) {
         holder.bind(currentList[position])
+    }
+
+    private object ExpPurchaseDiff: DiffUtil.ItemCallback<ExpPurchase>() {
+        override fun areItemsTheSame(oldItem: ExpPurchase, newItem: ExpPurchase): Boolean {
+            return oldItem.seq == newItem.seq
+        }
+
+        override fun areContentsTheSame(oldItem: ExpPurchase, newItem: ExpPurchase): Boolean {
+            return oldItem == newItem
+        }
     }
 }

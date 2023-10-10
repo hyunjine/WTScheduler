@@ -3,4 +3,22 @@
     <style name="TextViewSt" parent="@style/Widget.AppCompat.TextView" >
         <item name="android:includeFontPadding">false</item>
     </style>
+
+    <style name="EditTextSt">
+<!--        <item name="colorAccent">@color/primary_900</item>-->
+<!--        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_color</item>-->
+    </style>
+
+    <style name="ScrollViewSt">
+        <item name="android:overScrollMode">never</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+    </style>
+
+    <style name="RecyclerViewSt">
+        <item name="android:overScrollMode">never</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+    </style>
 </resources>

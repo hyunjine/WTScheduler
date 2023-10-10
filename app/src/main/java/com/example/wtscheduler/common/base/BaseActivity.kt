@@ -1,6 +1,7 @@
 package com.example.wtscheduler.common.base
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -12,6 +13,7 @@ import com.example.wtscheduler.R
 
 abstract class BaseActivity<T: ViewBinding>(private val bindingFactory: (LayoutInflater) -> T): AppCompatActivity() {
     protected lateinit var binding: T
+    protected val context: Context get() = this
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +50,7 @@ abstract class BaseActivity<T: ViewBinding>(private val bindingFactory: (LayoutI
         enterAnim: Int,
         exitAnim: Int
     ) {
-        startActivity(intent)
+        super.startActivity(intent)
         if (Build.VERSION.SDK_INT >= 34) {
             overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, enterAnim, exitAnim)
         } else {
@@ -65,7 +67,7 @@ abstract class BaseActivity<T: ViewBinding>(private val bindingFactory: (LayoutI
         enterAnim: Int,
         exitAnim: Int
     ) {
-        finish()
+        super.finish()
         if (Build.VERSION.SDK_INT >= 34) {
             overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, enterAnim, exitAnim)
         }else {

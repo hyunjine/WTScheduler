@@ -60,7 +60,7 @@ abstract class BaseActivity<T: ViewBinding>(private val bindingFactory: (LayoutI
     }
 
     override fun finish() {
-        finish(R.anim.none, R.anim.slide_out_left)
+        finish(R.anim.none, R.anim.slide_out_right)
     }
 
     protected fun finish(

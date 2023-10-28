@@ -20,7 +20,12 @@ class ExpPurchaseAdapter: ListAdapter<ExpPurchase, ExpPurchaseAdapter.ExpPurchas
 
         fun bind(data: ExpPurchase) = binding.run {
             tvLink.text = data.link
+            tvName.text = data.name
         }
+    }
+
+    fun submitItem(data: ExpPurchase) {
+        submitList(currentList.toMutableList().apply { add(data) })
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExpPurchaseViewHolder {

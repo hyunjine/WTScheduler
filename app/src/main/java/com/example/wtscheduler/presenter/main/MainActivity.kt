@@ -15,7 +15,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
         onClickEvent()
     }
 
-    private fun onClickEvent() = binding.run {
+    override fun onClickEvent() = binding.run {
         clExpPurchase.setOnSingleClickListener {
             startActivity(ExpPurchaseActivity::class.java)
         }

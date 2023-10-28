@@ -32,7 +32,7 @@ class ExerciseActivity : BaseActivity<ActivityExerciseBinding>({ ActivityExercis
         rvExercise.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
     }
 
-    private fun onClickEvent() = binding.run {
+    override fun onClickEvent() = binding.run {
 
     }
 

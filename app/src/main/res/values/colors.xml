@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- BLACK -->
+    <color name="black">#000000</color>
+    <color name="black_900">#333333</color>
+    <color name="black_800">#666666</color>
+    <color name="black_700">#999999</color>
+    <color name="black_600">#CCCCCC</color>
+    <color name="black_500">#E6E6E6</color>
+    <color name="black_400">#F2F2F2</color>
+    <color name="black_300">#F9FAFA</color>
+
+    <!-- WHITE -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- PRIMARY -->
+    <color name="primary_900">#FF6428D4</color>
+    <color name="primary_800">#FF814FDE</color>
+    <color name="primary_700">#FFA07AE6</color>
+    <color name="primary_600">#FFBEA5EE</color>
+    <color name="primary_500">#FFDDD0F6</color>
+    <color name="primary_400">#FFF9F6FD</color>
 </resources>

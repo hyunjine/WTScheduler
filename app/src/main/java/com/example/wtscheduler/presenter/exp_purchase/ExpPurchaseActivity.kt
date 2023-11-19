@@ -40,7 +40,6 @@ class ExpPurchaseActivity: BaseActivity<ActivityExpPurchaseBinding>({ ActivityEx
                 val name = data.getStringExtra(SearchActivity.INTENT_KEY_SEARCH_NAME) ?: String.DEFAULT
                 val link = data.getStringExtra(SearchActivity.INTENT_KEY_SEARCH_LINK) ?: String.DEFAULT
                 rvPurchaseAdapter.submitItem(ExpPurchase(name = name, link = link))
-
             }
         }
     }

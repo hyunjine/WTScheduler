@@ -20,6 +20,7 @@ abstract class BaseActivity<T: ViewBinding>(private val bindingFactory: (LayoutI
         setContentView(bindingFactory(layoutInflater).also { binding = it }.root)
         setOnBackPressedListener()
         onClickEvent()
+        observeViewModel()
     }
 
     protected open fun setOnBackPressedListener() {
@@ -30,9 +31,9 @@ abstract class BaseActivity<T: ViewBinding>(private val bindingFactory: (LayoutI
         })
     }
 
-    protected open fun onClickEvent() {
+    protected open fun onClickEvent() { }
 
-    }
+    protected open fun observeViewModel() { }
 
     protected open fun onBack() {
         finish()

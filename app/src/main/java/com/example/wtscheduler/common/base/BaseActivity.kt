@@ -33,7 +33,7 @@ abstract class BaseActivity<T: ViewBinding>(private val bindingFactory: (LayoutI
 
     protected open fun onClickEvent() { }
 
-    protected open fun observeViewModel() { }
+    protected open fun observeViewModel(): Unit { }
 
     protected open fun onBack() {
         finish()

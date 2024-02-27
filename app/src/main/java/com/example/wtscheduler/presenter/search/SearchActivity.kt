@@ -5,11 +5,9 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import com.example.wtscheduler.common.base.BaseActivity
 import com.example.wtscheduler.common.extension.DEFAULT
 import com.example.wtscheduler.common.extension.setOnSingleClickListener
-import com.example.wtscheduler.common.util.log
 import com.example.wtscheduler.databinding.ActivitySearchBinding
 import dagger.hilt.android.AndroidEntryPoint
 

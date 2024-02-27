@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    100% / FF
+    90% / E6
+    80% / CC
+    70% / B3
+    60% / 99
+    50% / 80
+    40% / 66
+    30% / 4D
+    20% / 33
+    10% / 1A
+    5% / 0D
+
     <!-- BLACK -->
     <color name="black">#000000</color>
     <color name="black_900">#333333</color>
@@ -12,6 +24,7 @@
 
     <!-- WHITE -->
     <color name="white">#FFFFFF</color>
+    <color name="white70">#B3FFFFFF</color>
 
     <!-- PRIMARY -->
     <color name="primary_900">#FF6428D4</color>

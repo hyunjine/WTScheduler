@@ -35,8 +35,7 @@ class ExerciseActivity : BaseActivity<ActivityExerciseBinding>({ ActivityExercis
     override fun onClickEvent() = binding.run {
 
     }
-
-    private fun observeViewModel() = binding.run {
+    override fun observeViewModel(): Unit = binding.run {
         lifecycleScope.launch {
             viewModel.uiState.collect { state ->
                 when (state) {

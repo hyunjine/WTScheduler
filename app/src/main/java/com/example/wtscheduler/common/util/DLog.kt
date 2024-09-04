@@ -16,4 +16,8 @@ object DLog {
     fun i(msg: Any?, tag: String = TAG) {
         Log.i(tag, msg.toString())
     }
+
+    fun r(msg: Any?, tag: String = TAG) {
+        Log.d(tag, msg.toString())
+    }
 }

@@ -1,6 +1,18 @@
 package com.example.wtscheduler
 
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.suspendCancellableCoroutine
+import kotlinx.coroutines.test.runTest
 import org.junit.Test
+import java.lang.NullPointerException
+import kotlin.contracts.InvocationKind
+import kotlin.contracts.contract
+import kotlin.coroutines.resume
+import kotlin.coroutines.resumeWithException
+import kotlin.random.Random
+import kotlin.time.measureTime
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -9,59 +21,25 @@ import org.junit.Test
  */
 
 class ExampleUnitTest {
-    interface OnClick {
-        fun click(position: Int): String
-    }
-
     @Test
-    fun `과연 시발?`()  {
-        val list = listOf(1, 2, 3)
-        val (first, second, third, fourth) = list
-        println(fourth)
-
-        val test = Tess()
-
-        test.setListener(object : OnClick {
-            override fun click(position: Int): String {
-                return "click"
+    fun main() {
+        runTest {
+            delay(3000L)
+            println("1번째")
+            delay(1000L)
+            println("2번째")
+        }
+    }
+    private suspend fun getUser(): String {
+        return suspendCancellableCoroutine { cont ->
+            getUser {
+                println(it)
+                cont.resumeWithException(NullPointerException())
             }
-        })
-        val dd = 2
-        setListener(fun(dd): String {
-            return "$dd"
-        })
-
-        val one: (Int) -> String = { a ->
-            "$a"
         }
-
-        val two = fun(a: Int): String {
-            return "$a"
-        }
-
-        one
-        two
-
     }
 
-    private fun setListener(aa: fun(Int): String {
-
-    })
-
-    private fun setListener(listener: (Int) -> String) {
-
+    private fun getUser(callBack: (String) -> Unit) {
+        callBack("양현진")
     }
 }
-
-class Tess {
-    private var listener: ExampleUnitTest.OnClick? = null
-
-    fun setListener(listener: ExampleUnitTest.OnClick) {
-        this.listener = listener
-    }
-
-    override fun equals(other: Any?): Boolean {
-        return super.equals(other)
-    }
-}
-

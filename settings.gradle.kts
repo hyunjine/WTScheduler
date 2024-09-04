@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "WTScheduler"
 include(":app")
+include(":feature")

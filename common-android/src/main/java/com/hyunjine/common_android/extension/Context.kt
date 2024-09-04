@@ -1,4 +1,4 @@
-package com.example.wtscheduler.common.extension
+package com.hyunjine.common_android.extension
 
 import android.content.Context
 import android.graphics.drawable.Drawable

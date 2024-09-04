@@ -43,4 +43,6 @@ dependencies {
 
     implementation("androidx.activity:activity-ktx:1.8.0")
     implementation("androidx.fragment:fragment-ktx:1.6.1")
+
+    implementation(project(":common"))
 }

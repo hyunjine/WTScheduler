@@ -1,4 +1,4 @@
-package com.example.wtscheduler.common.util
+package com.hyunjine.common_android.util
 
 import android.util.Log
 

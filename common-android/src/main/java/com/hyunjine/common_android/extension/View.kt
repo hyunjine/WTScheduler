@@ -1,8 +1,8 @@
-package com.example.wtscheduler.common.extension
+package com.hyunjine.common_android.extension
 
 import android.view.View
 import androidx.annotation.ColorRes
-import com.example.wtscheduler.common.util.SingleClickListener
+import com.hyunjine.common_android.util.SingleClickListener
 
 fun View.setOnSingleClickListener(targetInterval: Long = 500L, listener: (View?) -> Unit = {}) {
     setOnClickListener(object : SingleClickListener(targetInterval) {

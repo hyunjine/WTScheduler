@@ -1,4 +1,4 @@
-package com.example.wtscheduler.common.extension
+package com.hyunjine.common.extension
 
 val String.Companion.DEFAULT: String
     get() = ""

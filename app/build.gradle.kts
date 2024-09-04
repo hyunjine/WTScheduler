@@ -65,4 +65,6 @@ dependencies {
     implementation("com.github.skydoves:sandwich:1.2.4")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.2")
     implementation("com.google.code.gson:gson:2.10.1")
+
+    implementation(project(":common-android"))
 }

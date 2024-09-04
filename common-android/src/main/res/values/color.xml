@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- percent -->
+    100% / FF
+    90% / E6
+    80% / CC
+    70% / B3
+    60% / 99
+    50% / 80
+    40% / 66
+    30% / 4D
+    20% / 33
+    10% / 1A
+    5% / 0D
+
+    <!-- BLACK -->
+    <color name="black">#FF000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_900">#FF333333</color>
+    <color name="black_800">#FF666666</color>
+    <color name="black_700">#FF999999</color>
+    <color name="black_600">#FFCCCCCC</color>
+    <color name="black_500">#FFE6E6E6</color>
+    <color name="black_400">#FFF2F2F2</color>
+    <color name="black_350">#F5F5F5</color>
+    <color name="black_300">#FFF9FAFA</color>
+    <color name="black_900_30">#4D333333</color>
+    <color name="black_900_40">#66333333</color>
+    <color name="black_900_50">#80333333</color>
+    <color name="black_900_60">#99333333</color>
+    <color name="black_900_70">#B0333333</color>
+    <color name="black_900_80">#CA333333</color>
+
+    <!-- PRIMARY -->
+    <color name="primary_900_test">#806428D4</color>
+    <color name="primary_900">#FF6428D4</color>
+    <color name="primary_800">#FF814FDE</color>
+    <color name="primary_700">#FFA07AE6</color>
+    <color name="primary_600">#FFBEA5EE</color>
+    <color name="primary_500">#FFDDD0F6</color>
+    <color name="primary_400">#FFF9F6FD</color>
+    <color name="primary_900_10">#1A6428D4</color>
+
+    <!-- WHITE -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_70">#B2FFFFFF</color>
+    <color name="white_75">#BFFFFFFF</color>
+    <color name="white_85">#D9FFFFFF</color>
+    <color name="white_90">#E6FFFFFF</color>
+
+    <!-- SECONDARY -->
+    <color name="secondary_900">#FFE600</color>
+    <color name="secondary_800">#FFF066</color>
+    <color name="secondary_700">#FFFACC</color>
+    <color name="secondary_600">#FFFDF3</color>
+
+    <!-- POINT COLOR (orange) -->
+    <color name="orange_990">#F58F00</color>
+    <color name="orange_950">#FFA628</color>
+    <color name="orange_900">#FFB828</color>
+    <color name="orange_400">#FFEEA5</color>
+    <color name="orange_350">#FFF2BD</color>
+    <color name="orange_300">#FFF9E0</color>
+
+    <!-- POINT COLOR (green) -->
+    <color name="green_900">#00AA73</color>
+    <color name="green_400">#CEFFD9</color>
+    <color name="green_300">#F0FFF3</color>
+
+    <!-- ALERT COLOR -->
+    <color name="red">#FF0000</color>
+    <color name="red_900">#E15241</color>
+    <color name="red_800">#E35F4F</color>
+    <color name="red_500">#FFBDBD</color>
+    <color name="red_400">#F8D7D3</color>
+
+    <color name="blue_900">#4880EE</color>
+
+    <!-- ECT -->
+    <color name="transparent">#00ffffff</color>
+
+</resources>

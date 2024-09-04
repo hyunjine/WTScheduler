@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "WTScheduler"
 include(":app")
 include(":feature")
+include(":feature:purchase")
+include(":common-android")

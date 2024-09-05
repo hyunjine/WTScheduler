@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".PurchasePlanActivity"
+            android:name=".WantedClothesActivity"
             android:exported="false" />
     </application>
 

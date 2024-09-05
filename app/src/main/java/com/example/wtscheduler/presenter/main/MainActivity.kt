@@ -2,12 +2,12 @@ package com.example.wtscheduler.presenter.main
 
 import android.os.Bundle
 import com.example.wtscheduler.databinding.ActivityMainBinding
-import com.hyunjine.common_android.base.BaseActivity
-import com.hyunjine.purchase.PurchasePlanActivity
+import com.hyunjine.common_android.base.BasePureActivity
+import com.hyunjine.purchase.WantedClothesActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inflate(it) }) {
+class MainActivity : BasePureActivity<ActivityMainBinding>({ ActivityMainBinding.inflate(it) }) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         onUiEvent()
@@ -15,7 +15,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>({ ActivityMainBinding.inf
 
     private fun onUiEvent() = binding.run {
         tvEnterPurchase.setOnClickListener {
-            startActivity(PurchasePlanActivity::class)
+            startActivity(WantedClothesActivity::class)
         }
     }
 }

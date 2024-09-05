@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TextViewSt" parent="@style/Widget.AppCompat.TextView" >
-        <item name="android:includeFontPadding">false</item>
-    </style>
-
-    <style name="EditTextSt">
+    <style name="EditTextStyle">
 <!--        <item name="colorAccent">@color/primary_900</item>-->
 <!--        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_color</item>-->
     </style>
 
-    <style name="ScrollViewSt">
+    <style name="ScrollViewStyle">
         <item name="android:overScrollMode">never</item>
         <item name="android:fillViewport">true</item>
         <item name="android:clipToPadding">false</item>
         <item name="android:clipChildren">false</item>
     </style>
 
-    <style name="RecyclerViewSt">
+    <style name="RecyclerViewStyle">
         <item name="android:overScrollMode">never</item>
         <item name="android:clipToPadding">false</item>
         <item name="android:clipChildren">false</item>

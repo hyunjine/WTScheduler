@@ -17,7 +17,18 @@ object DLog {
         Log.i(tag, msg.toString())
     }
 
-    fun r(msg: Any?, tag: String = TAG) {
-        Log.d(tag, msg.toString())
+    fun r(vararg msg: Any?) {
+        val stackTrace = Thread.currentThread().stackTrace
+        val currentMethodIndex = stackTrace.indexOfFirst { it.methodName == "r" }
+        if (currentMethodIndex != -1 && currentMethodIndex + 1 < stackTrace.size) {
+            val caller = stackTrace[currentMethodIndex + 1]
+            val path = caller.toString()
+                .split(".")
+                .takeLast(3)
+                .joinToString(", ")
+                .replace("\$", "_")
+            Log.i("winter","Path = $path")
+        }
+        Log.d("winter",  msg.joinToString("\n") + "\n")
     }
 }

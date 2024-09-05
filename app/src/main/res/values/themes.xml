@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.WTScheduler" parent="Base.Theme.WTScheduler" />
+    <style name="Theme.WTScheduler" parent="Base.Theme.WTScheduler" >
+        <item name = "android:windowBackground">@color/white</item>
+    </style>
 </resources>

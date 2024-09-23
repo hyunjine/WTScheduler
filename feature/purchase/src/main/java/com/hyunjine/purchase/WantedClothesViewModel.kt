@@ -34,6 +34,5 @@ class WantedClothesViewModel @Inject constructor(): BaseViewModel() {
 
     private fun getThumbnailUrl(urls: List<String>) {
         _listItems.value = urls.map { WantedClothesModel(link = it) }
-        DLog.r(listItems.value.size)
     }
 }

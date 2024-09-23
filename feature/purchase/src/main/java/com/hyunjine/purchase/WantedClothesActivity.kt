@@ -1,5 +1,6 @@
 package com.hyunjine.purchase
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -10,6 +11,7 @@ import com.hyunjine.common_android.util.DLog
 import com.hyunjine.common_android.util.GridSpacingItemDecoration
 import com.hyunjine.common_android.util.ItemTouchHelperCallback
 import com.hyunjine.purchase.adapter.WantedClothesAdapter
+import com.hyunjine.purchase.add.AddClothesActivity
 import com.hyunjine.purchase.databinding.ActivityWantedClothesBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
@@ -24,6 +26,7 @@ class WantedClothesActivity : BaseActivity<ActivityWantedClothesBinding, WantedC
         super.onCreate(savedInstanceState)
         injectAppBar(binding.appBar)
         setRecyclerView()
+        onUiEvent()
     }
 
     private fun setRecyclerView() = binding.rvItem.apply {
@@ -39,6 +42,12 @@ class WantedClothesActivity : BaseActivity<ActivityWantedClothesBinding, WantedC
             viewModel.listItems.collectLatest {
                 rvAdapter.submitList(it)
             }
+        }
+    }
+
+    private fun onUiEvent() = binding.run {
+        ivAdd.setOnClickListener {
+            startActivity(Intent(activity, AddClothesActivity::class.java))
         }
     }
 }

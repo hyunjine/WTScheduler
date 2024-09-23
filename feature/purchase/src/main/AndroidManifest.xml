@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".add.AddClothesActivity"
+            android:exported="false" />
+        <activity
             android:name=".WantedClothesActivity"
             android:exported="false" />
     </application>

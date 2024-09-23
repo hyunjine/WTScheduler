@@ -32,9 +32,9 @@ class WantedClothesViewHolder(
                     ?: document.select("link[rel=image_src]").first()?.attr("href")
                 val title = document.select("meta[property=og:title]").first()?.attr("content")
                     ?: document.title()
-                DLog.r(model.link)
+
                 if (model.link.contains("smart")) {
-                    DLog.r(thumbnailUrl, title)
+
                 }
                 withContext(Dispatchers.Main) {
                     tvTitle.text = title
